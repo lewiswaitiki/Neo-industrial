@@ -104,6 +104,10 @@ body {
     background: radial-gradient(1200px 600px at 50% -100px,
             #142a5c 0%,
             transparent 70%);
+    background-image: url('../images/hero-image.png');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -120,11 +124,14 @@ body {
 .hero p {
     color: var(--text-muted);
     margin: 0 0 1rem;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color:#fff;
 }
 
 .dealers {
     color: var(--accent-3);
     margin: 0 0 1.5rem;
+    font-size: large;
 }
 
 .btn {
@@ -470,7 +477,7 @@ x .btn:hover {
     }
 
     .hero {
-        padding: 4rem 1rem 2rem;
+        padding: 2rem 1rem 2rem;
         height: auto;
     }
 }
