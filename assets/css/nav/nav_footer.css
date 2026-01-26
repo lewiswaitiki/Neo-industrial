@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(8, 18, 42, 0.75);
+  background: #0b1a3a;
+}
+
+.logo {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+}
+
+.nav-toggle {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22><path d=%22M6 9h20M6 16h20M6 23h20%22 stroke=%22white%22 stroke-width=%222%22 stroke-linecap=%22round%22/></svg>")
+    center/20px no-repeat;
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.nav-links a.active {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+.hero {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  background: radial-gradient(
+    1200px 600px at 50% -100px,
+    #142a5c 0%,
+    transparent 70%
+  );
+  background:
+    linear-gradient(180deg, rgba(8, 18, 42, 0.75), rgba(8, 18, 42, 0.75)),
+    url("../images/hero-image.png");
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  margin: 0 0 0.75rem;
+}
+
+.hero p {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #fff;
+  font-weight: 500;
+}

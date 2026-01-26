@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg-dark: #0b1a3a;
   --bg-darker: #08122a;
   --text: #eaf2ff;
@@ -8,7 +8,7 @@
   --surface: #111a33;
   --card: #132246;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-}
+} */
 
 :root {
   --bg-dark: rgb(46, 48, 146);
@@ -40,7 +40,12 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  font-family:
+    system-ui,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, var(--bg-dark), var(--bg-darker));
 }
@@ -109,11 +114,8 @@ body {
     #142a5c 0%,
     transparent 70%
   );
-  background: linear-gradient(
-      180deg,
-      rgba(8, 18, 42, 0.75),
-      rgba(8, 18, 42, 0.75)
-    ),
+  background:
+    linear-gradient(180deg, rgba(8, 18, 42, 0.75), rgba(8, 18, 42, 0.75)),
     url("../images/hero-image.png");
   background-size: cover;
   object-fit: cover;
@@ -216,7 +218,9 @@ x .btn:hover {
   padding: 1.25rem;
   border-radius: 12px;
   box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -266,7 +270,9 @@ x .btn:hover {
   height: 200px;
   object-fit: cover;
   transform: scale(1.03);
-  transition: transform 0.4s ease, filter 0.3s ease;
+  transition:
+    transform 0.4s ease,
+    filter 0.3s ease;
 }
 
 .showcase-card:hover img {
@@ -323,7 +329,9 @@ x .btn:hover {
   background: var(--surface);
   border-radius: 12px;
   box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid rgba(142, 216, 248, 0.1);
 }
 
@@ -402,7 +410,9 @@ x .btn:hover {
 .reveal.revealed {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 600ms ease, transform 600ms ease;
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
 }
 
 /* Contact Form */
@@ -556,6 +566,7 @@ x .btn:hover {
     /* border-bottom-color: var(--accent); */
     border: none;
     color: var(--accent);
+    text-decoration: none;
   }
 
   .hero {
